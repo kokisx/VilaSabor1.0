@@ -1,0 +1,234 @@
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+/*Formatação dos textos*/
+.textog{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tit{
+  font-family: 'Times New Roman', Times, serif;
+}
+.tit2{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.8em;
+  max-width: 480px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+
+.header{
+    background-image: url("img/back.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; 
+    width: 100%;
+}
+
+
+.navbar{
+     background-color: rgba(0, 0, 0, 0.445);
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+   
+}
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.navbar a:hover {
+        color: var(--main-color);
+        border-bottom: 0.1rem solid  --main-color;
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+}
+    
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+body{
+    background-color: #010103;
+    color: #fff;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content{
+    font-size: 1.6em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div[class*=box] {
+  height: 33.33%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  background-color:#01010300;
+}
+
+.btn-three {
+  color: #79fa00;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(211, 175, 55, 0.514);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(211, 175, 55, 0.425);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+/* Imagem de  fundo do menu de pratos*/
+.imgfundo{
+  background-image: url("img/frente.jpeg");
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; 
+}
+/*Formatação dos pratos */
+.pratos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres colunas iguais */
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 8px auto;
+    max-width: 1200px;
+}
+.pratos1{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border-radius: 12px;
+    aspect-ratio: 4 / 3;
+    min-height: 220px;
+}
+.pratos1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: full;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.pratos1 .valor{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.pratos1:hover img{
+    transform: scale(1.05);
+}
+
+.pratos1:hover .valor{
+    opacity: 1;
+}
+
+@media (max-width: 1080px) {
+    .pratos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .pratos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .pratos{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Restaurante</title>
+    <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+    <header class="header">
+<nav class="navbar">
+<ul id="nav">
+  <li><a href="index.html"><img src="./img/ChatGPT Image 12 de jun. de 2026, 13_24_04.png" alt="logo restobar" class="logo"></a></li>
+  <li><a href="reserva.html" target="_blank">Reserve aqui</a></li>
+  <li><a href="#review">Avaliações</a></li>
+</ul>
+</nav>
+  </header>
+    <main>
+        <section class="container">
+           <div>
+
+    <h1>Faça sua Reserva</h1>
+
+    <label for="telefone">WhatsApp</label>
+
+<input
+    type="tel"
+    id="telefone"
+    placeholder="Ex: 71999999999"
+    required
+>
+<label for="mensagem">Mensagem para o Restaurante</label>
+
+<textarea
+    id="mensagem"
+    placeholder="Confirme a data, horário para a sua reserva."
+    rows="4"
+    datetime
+></textarea>
+
+    <label for="pessoas">Quantidade de Pessoas</label>
+
+    <input
+        type="number"
+        id="pessoas"
+        min="1"
+        placeholder="Digite a quantidade de pessoas"
+    >
+
+    <button onclick="calcularReserva()">
+        Calcular Reserva
+    </button>
+
+    <div id="resultado"></div>
+
+    <button id="btnEnviar" onclick="enviarWhatsapp()" disabled>
+        Confirmar Reserva
+    </button>
+
+</div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+        <p class="copy">Copyright © 2026 RestôMenu. Todos os direitos reservados.</p>
+    <script src="principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+.header{
+    background-image: url("img/frente.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; 
+    width: 100%;
+}
+
+/*navbar*/
+.navbar{
+     background-color: rgba(0, 0, 0, 0.445);
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+   
+}
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.navbar a:hover {
+        color: var(--main-color);
+        border-bottom: 0.1rem solid  --main-color;
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+}
+    
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+body{
+    background-color: #010103;
+    color: #fff;
+}
+
+/* formulario de reserva */
+.container{
+    background: rgb(140, 140, 140);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    margin: 10px auto 0;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:15px 0;
+}
+
+button{
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+#resultado{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    margin:15px 0;
+    border-radius:8px;
+    resize:none;
+}
