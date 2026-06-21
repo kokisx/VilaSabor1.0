@@ -64,7 +64,7 @@ Quantidade de Pessoas: ${pessoasGlobal}
 Valor da Reserva: R$ ${valorFinalGlobal.toFixed(2)}
 
 Data e hora:
-${mensagem}
+${mensagemGlobal}
 `;
 
         const response = await fetch(
