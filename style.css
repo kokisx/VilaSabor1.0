@@ -227,6 +227,20 @@ div[class*=box] {
     }
 }
 
+/* Rodapé */
+
+.rdp{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    list-style: none;
+}
+
+.fott{
+    margin: 0 1rem;
+    padding: 5px;
+}
+
 
 
 
