@@ -97,3 +97,15 @@ ${mensagemGlobal}
         alert("Erro ao enviar reserva.");
     }
 }
+
+/*tentativa de galeria responsiva*/
+const botao = document.getElementById("menu-btn");
+const sidebar = document.getElementById("sidebar");
+const conteudo = document.getElementById("conteudo");
+
+botao.addEventListener("click", ()=>{
+
+    sidebar.classList.toggle("ativo");
+    conteudo.classList.toggle("mover");
+
+});

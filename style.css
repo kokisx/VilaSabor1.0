@@ -22,7 +22,10 @@
 }
 .tit{
   font-family: 'Times New Roman', Times, serif;
+  display:flex;
+  text-align: center;
 }
+
 .tit2{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -42,9 +45,11 @@
     width: 100%;
 }
 
+/*NAVBAR*/
 
 .navbar{
      background-color: rgba(0, 0, 0, 0.445);
+     box-shadow: #d4af3791;
 }
 #nav{
     display: flex;
@@ -100,7 +105,7 @@ div[class*=box] {
   align-items: center;
 }
 
-
+/* BOTÃO DE RESERVA */
 
 .btn {
   line-height: 50px;
@@ -227,6 +232,18 @@ div[class*=box] {
     }
 }
 
+.tps{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 2.8em;
+}
+
 /* Rodapé */
 
 .rdp{
@@ -240,7 +257,92 @@ div[class*=box] {
     margin: 0 1rem;
     padding: 5px;
 }
+/*tentativa de titulo diferente*/
+#h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.tit1{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+margin:70px 0;
+font-family: 'Times New Roman', Times, serif;
+}
+.tit1 span{
+width:120px;
+height:2px;
+background:#d4af37;
+box-shadow:0 0 12px #d4af37;
 
+}
+.tit1 span{
+height:2px;
+width:180px;
+background:linear-gradient(
+90deg,
+transparent,
+#d4af37,
+transparent
+);
+}
+/*tentativa de galeria responsiva*/
+#sidebar{
+
+position:fixed;
+top:0;
+left:-320px;
+width:320px;
+height:100vh;
+background:#111;
+color:white;
+transition:.4s;
+padding:25px;
+box-sizing:border-box;
+overflow-y:auto;
+z-index:999;
+}
+
+#sidebar.ativo{
+left:0;
+}
+
+#conteudo{
+    transition:.4s;
+}
+
+#conteudo.mover{
+margin-left:320px;
+}
+
+#menu-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:1000;
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#d4af37;
+    color:white;
+    cursor:pointer;
+}
+
+.item{
+margin:20px 0;
+}
+
+.item img{
+width:100%;
+border-radius:15px;
+}
+
+.item span{
+display:block;
+margin-top:10px;
+text-align:center;
+}
 
 
 
